@@ -1,0 +1,58 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.0.107/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  redis:
+    host: 192.168.0.107
+    port: 6379
+
+  jackson:
+    default-property-inclusion: non_null
+server:
+  context-path: /sell
+
+
+
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: /var/log/tomcat/
+#  file: /var/log/tomcat/sell.log
+#  level:
+#    com.imooc.LoggerTest: debug
+ # //wxd898fcb01713c658
+
+  #f9555bf4147fbbb5c4b8173ce69982bf
+wechat:
+  #TestmpAppId:
+ # TestmpAppSecret:
+  mpAppId: wxcec419da53b34412
+  mpAppSecret: 8eb720f17386eaa13ce5d161d299b248
+
+#公众开放平台
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+
+  mchId: 1483469312
+  mchKey: 098F6BCD4621D373CADE4E832627B4F6
+  #廖师兄商户密钥
+  keyPath: D:/your/path/h5.p12
+  notifyUrl: http://lxwttg.natapp1.cc/sell/pay/notify
+  templateId:
+    orderStatus: OiKncZNJewLFFGAkaQBV2EzPpG59-eGOzejKepTs0sI
+projectUrl:
+    wechatMpAuthorize: http://sell.springboot.cn
+    wechatOpenAuthorize: http://sell.springboot.cn
+    sell: http://lxwttg.natapp1.cc
+
+logging:
+  level:
+    com.imooc.dataobject.mapper: trace
+
+mybatis:
+      mapper-locations: classpath:mapper/*.xml
